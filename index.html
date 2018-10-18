@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>夜苍雪(Night snow)</title>
+  <meta name="description" content="这是一个神奇的网站......">
+  <meta name="keywords" content="前端，编程，全栈，绘画，设计">
+  <link rel="shortcut icon" type="images/x-icon" href="./img/kong.jpg">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+  <div class="kong">
+    <div class="box">
+      <div class="mid">
+        <div class="green">
+          <img src="./img/green_cycle.svg" alt="" width="100%" height="100%">
+          <div class="yellow">
+            <img src="./img/yellow_cycle.svg" alt="" width="100%" height="100%">
+            <div class="blue">
+              <img src="./img/blue_cycle.svg" alt="" width="100%" height="100%">
+              <div class="photo">
+                <img src="./img/timg (2).jpg" alt="" width="100%" height="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <h3>镇站神兽: 平头哥</h3>
+  </div>
+  <div class="box">
+    <div class="wrapper">
+      <div class="bg"></div>
+      <ul>
+        <li>1、生死看淡，不服就干</li>
+        <li>2、出来混要么我整死各位，要么被各位整死。</li>
+        <li>3、别人的是我的，我的还是我的。</li>
+        <li>4、我也不想针对谁，在我眼里你们都能吃。</li>
+        <li>5、我干起仗来，我自己都怕。</li>
+        <li>6、平头白发银披风，非洲大地我最凶。</li>
+        <li>7、芸芸众生，皆为我餐。</li>
+        <li>8、我这一生就是太忙碌了，不是干架，就是在干架的路上。</li>
+        <li>9、老子从不记仇，有仇当场就报了。</li>
+        <li>10、张狂不是我的本性，但是惹我就等于自杀</li>
+      </ul>
+      <!-- <div class="fl">分享到：</div> 
+      <div class="share">
+        <img src="./img/qqzoneshare.png" alt="" width="32" height="">
+        <img src="./img/qqshare.png" alt="" width="32" height="">
+        <img src="./img/sinaweiboshare.png" alt="" width="32" height="">
+        <img src="./img/wechatshare.png" alt="" width="32" height="">
+      </div> -->
+      <div class="bdsharebuttonbox" data-tag="share_1">
+          <!-- <a class="bds_mshare" data-cmd="sqq"></a> -->
+          <a class="bds_sqq" data-cmd="sqq"></a>
+          <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+          <a class="bds_tsina" data-cmd="tsina"></a>
+          <a class="bds_weixin" data-cmd="weixin"></a>
+          <!-- <a class="bds_renren" data-cmd="renren"></a> -->
+          <!-- <a class="bds_tqq" data-cmd="tqq"></a> -->
+          <!-- <a class="bds_more" data-cmd="more">更多</a> -->
+          <!-- <a class="bds_count" data-cmd="count"></a> -->
+        </div>
+        <script>
+          window._bd_share_config = {
+            common: {
+              bdText: '一个神奇的网页',
+              bdDesc: '打开了新世界的大门',
+              bdUrl: '自定义分享url地址',
+              bdPic: '自定义分享图片'
+            },
+            share: [{
+              "bdSize": 32
+            }],
+            // slide: {
+            //   bdImg: 0,
+            //   bdPos: "right",
+            //   bdTop: 100
+            // },
+            image: [{
+              viewType: 'list',
+              viewPos: 'top',
+              viewColor: 'black',
+              viewSize: '16',
+              viewList: ['qzone', 'tsina', 'huaban', 'tqq', 'renren']
+            }],
+            // selectShare: [{
+            //   "bdselectMiniList": ['qzone', 'tqq', 'kaixin001', 'bdxc', 'tqf']
+            // }]
+          }
+          with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+        </script>
+    </div>
+    </div>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script> -->
+    <!-- <script>
+      function shareTo(stype) {
+        var ftit = '';
+        var flink = '';
+        var lk = '';
+        //获取文章标题    
+        ftit = $('.pctitle').text();
+        //获取网页中内容的第一张图片    
+        flink = $('.pcdetails img').eq(0).attr('src');
+        if (typeof flink == 'undefined') { flink = ''; }
+        //当内容中没有图片时，设置分享图片为网站logo   
+        if (flink == '') { lk = 'http://' + window.location.host + '/static/images/logo.png'; }
+        //如果是上传的图片则进行绝对路径拼接    
+        if (flink.indexOf('/uploads/') != -1) { lk = 'http://' + window.location.host + flink; }
+        //百度编辑器自带图片获取    
+        if (flink.indexOf('ueditor') != -1) { lk = flink; }
+        //qq空间接口的传参    
+        if (stype == 'qzone') { window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + document.location.href + '?sharesource=qzone&title=' + ftit + '&pics=' + lk + '&summary=' + document.querySelector('meta[name="description"]').getAttribute('content')); }
+        //新浪微博接口的传参    
+        if (stype == 'sina') { window.open('http://service.weibo.com/share/share.php?url=' + document.location.href + '?sharesource=weibo&title=' + ftit + '&pic=' + lk + '&appkey=2706825840'); }
+        //qq好友接口的传参    
+        if (stype == 'qq') { window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + document.location.href + '?sharesource=qzone&title=' + ftit + '&pics=' + lk + '&summary=' + document.querySelector('meta[name="description"]').getAttribute('content') + '&desc=php自学网，一个web开发交流的网站'); }
+        //生成二维码给微信扫描分享    
+        if (stype == 'wechat') { window.open('inc/qrcode_img.php?url=http://zixuephp.net/article-1.html'); }
+      }
+
+
+      function ShareFunc(n, param, callback) {
+        $('.share').children('img').eq(n).click(function () {
+          // shareSina()
+          callback(param)
+          alert(1)
+        })
+      }
+      ShareFunc(0, 'qzone', shareTo);
+      ShareFunc(1, 'qq', shareTo);
+      ShareFunc(2, 'sina', shareTo);
+      ShareFunc(3, 'wechat', shareTo);
+    </script> -->
+</body>
+
+</html>

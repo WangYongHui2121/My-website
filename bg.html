@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 220px;
+      height: 220px;
+    background-image: url('./img/blue_cycle.svg');
+    }
+    .bg {
+      width: 220px;
+      height: 220px;
+   
+    }
+
+   img {
+      width: 220px;
+      height: 220px;
+   
+    }
+  
+  
+  </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <!-- <div class="bg"></div> -->
+    <img src="" alt="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      alert($(".box").css("backgroundImage"))
+    var bg =  $(".box").css("backgroundImage").replace('url(','').replace(')','');
+    alert(bg)
+    // $('.bg').css({"background-image": "./img/cycle.svg"});
+    $('.bg').css({"background": "url("+ bg + ")"})
+    // $('img').css("src",bg)
+    
+    // $("img").attr("src",bg);
+    Math.random()
+      </script>
+</body>
+</html>

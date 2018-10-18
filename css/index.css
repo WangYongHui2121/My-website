@@ -1,0 +1,137 @@
+.kong {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  /* background-color: #ccc; */
+  background-size: cover;
+}
+
+.box {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.mid {
+  width: 400px;
+  height: 400px;
+  background: url('./img/cycle.svg') no-repeat center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.kong img {
+  position: absolute;
+}
+
+.green {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 70px auto;
+  overflow: hidden;
+}
+
+.green>img {
+  animation: rotateA 1s linear infinite;
+}
+.yellow {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 10px;
+  top: 10px;
+}
+
+.yellow>img {
+  animation: rotateB 1s linear infinite;
+}
+
+.blue {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  left: 10px;
+  top: 10px;
+}
+
+.blue>img {
+  animation: rotateA 1s linear infinite;
+}
+
+.photo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 7px;
+  top: 7px;
+  border: solid pink 3px;
+  border-radius: 50% !important;
+}
+
+.photo img {
+  border-radius: 50% !important;
+  box-shadow: 3px 3px 3px #fff;
+}
+
+@keyframes rotateA {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+a {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+a img {
+  width: 100%;
+  height: 500px;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.box {
+  width: 100%;
+}
+
+.box .wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box .wrapper .bg {
+  width: 100%;
+  height: 180px;
+  background: url('../img/tou.jpg') no-repeat center;
+  background-size: cover;
+  /* margin: 20px 0; */
+}
+
+.box .wrapper li {
+  width: 100%;
+  margin: 5px 0;
+  line-height: 30px;
+}
+/*  */
